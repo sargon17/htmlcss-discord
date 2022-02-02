@@ -3,12 +3,30 @@
   font-size: 16px;
 }
 
-:root {
-  --discord-blue: #255ee9;
-  --discord-black: #23272A;
-  --simple-white: #ffffff;
+h1,h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+p{
+    line-height: 2em;
 }
 
+:root {
+  --discord-blue: #255ee9;
+  --discord-light-blue: #8EA1E1;
+  --discord-black: #23272A;
+  --discord-gray: #F6F6F6;
+  --simple-white: #ffffff;
+
+}
+
+
+
+/* header */
 header {
     background-color: var(--discord-blue);
     font-weight: 600;
@@ -62,26 +80,73 @@ nav a:hover {
 .jumbo-content p {
     color: var(--simple-white);
 }
-.jumbo-content h1 {
-    font-size: 3em;
-    margin-bottom: 40px;
-}
-.jumbo-content p{
-    line-height: 2em;
-}
 .link-container{
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* header */
+
+/* main */
+/* sections */
+section{
+    min-height: 80vh;
+    position: relative;
+}
+
+.section-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.section-text-wrapper h2{
+    font-size: 3em;
+}
+
+
+
+/* sections */
+/* main */
+
+/* footer */
+footer{
+    background: var(--discord-black);
+}
+footer h2,
+footer h4,
+footer p,
+footer a{
+    color: var(--simple-white);
+
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+}
+.social-title{
+    width: 200px;
+}
+/* footer */
+
+
+
 
 
 
 
 /* reusable styling */
+.text-light-blue{
+    color: var(--discord-light-blue);
+    font-size: 1.5em;
+}
 .container {
   width: 100vw;
+}
+.flex{
+    display: flex;
 }
 .center-horizontal {
   width: 70vw;
@@ -90,8 +155,58 @@ nav a:hover {
 .margin-horizontal-10px{
     margin: 0 10px;
 }
+.margin-top-bottom{
+    margin: 40px 0;
+}
+.padding-40{
+    padding: 90px 180px;
+}
+.padding-bottom{
+    padding-bottom: 100px;
+}
 .black-btn{
     background: var(--discord-black);
     color: var(--simple-white);
 }
+.gray-bg{
+    background: var(--discord-gray);
+}
+.bg-blue{
+    background: var(--discord-light-blue);
+    color: var(--simple-white);
+    font-weight: 700;
+}
+
+.wave-after::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background: url(../img/wave.svg)  no-repeat;
+    background-size: cover;
+    opacity: .03;
+}
+.wave-before::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    background: url(../img/wave.svg)  no-repeat;
+    background-size: cover;
+    opacity: .03;
+    transform: rotate(180deg);
+}
+.text-align{
+    text-align: center;
+}
 /* reusable styling */
+
+
+/* debug */
+.debug section{
+    border: 4px dotted red;
+}
