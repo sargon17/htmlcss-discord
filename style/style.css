@@ -1,0 +1,97 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --discord-blue: #255ee9;
+  --discord-black: #23272A;
+  --simple-white: #ffffff;
+}
+
+header {
+    background-color: var(--discord-blue);
+    font-weight: 600;
+}
+.header-top {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    display: flex;
+}
+nav a {
+    padding: 15px 20px;
+    color: var(--simple-white);
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--simple-white);
+}
+
+.nav-btn {
+  min-width: 124px;
+  text-align: end;
+}
+.a-btn {
+  background: var(--simple-white);
+  padding: 1em 1.5em;
+  border-radius: 50px;
+}
+.a-btn:hover{
+    color: var(--discord-blue);
+}
+.header-bottom {
+    background: url(../img/jumbo.png) center;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+}
+.jumbo-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 800px;
+    padding: 40px;
+}
+.jumbo-content h1,
+.jumbo-content p {
+    color: var(--simple-white);
+}
+.jumbo-content h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+.jumbo-content p{
+    line-height: 2em;
+}
+.link-container{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* reusable styling */
+.container {
+  width: 100vw;
+}
+.center-horizontal {
+  width: 70vw;
+  margin: auto;
+}
+.margin-horizontal-10px{
+    margin: 0 10px;
+}
+.black-btn{
+    background: var(--discord-black);
+    color: var(--simple-white);
+}
+/* reusable styling */
