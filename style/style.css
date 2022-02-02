@@ -254,10 +254,8 @@ footer a{
 a:hover .fa-long-arrow-alt-down{
     color: var(--discord-blue);
 }
-/* reusable styling */
-
-
-/* debug */
-.debug section{
-    border: 4px dotted red;
+.image{
+    width: 80%;
 }
+
+/* reusable styling */
