@@ -199,6 +199,12 @@ a:hover .fa-long-arrow-alt-down {
   color: var(--simple-white);
   font-weight: 700;
 }
+.bg-blue:hover{
+    color: var(--discord-black);
+}
+.bg-blue:hover .fa-long-arrow-alt-down{
+    color: var(--discord-black);
+}
 .bg-blue .fa-long-arrow-alt-down {
   color: var(--simple-white);
 }
