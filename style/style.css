@@ -136,11 +136,14 @@ footer a{
 .social-icons{
     padding: 10px 0;
 }
-.fab{
+.social-icons .fab{
     font-size: 20px;
     color: var(--simple-white);
     cursor: pointer;
-    
+    margin-right: 20px;
+}
+.fab:hover{
+    color: var(--discord-light-blue);
 }
 
 .footer-nav{
@@ -218,6 +221,9 @@ footer a{
     color: var(--simple-white);
     font-weight: 700;
 }
+.bg-blue .fa-long-arrow-alt-down{
+    color: var(--simple-white);
+}
 
 .wave-after::after{
     content:"";
@@ -244,6 +250,9 @@ footer a{
 }
 .text-align{
     text-align: center;
+}
+a:hover .fa-long-arrow-alt-down{
+    color: var(--discord-blue);
 }
 /* reusable styling */
 
